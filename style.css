@@ -1,0 +1,148 @@
+.button {
+    /*background-color: #4caf50; /* Colore di sfondo */
+    background-color: rgb(0, 139, 116);
+    color: white; /* Colore del testo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra */
+    border: 1px solid #4caf50; /* Bordo */
+    border: none; /* Rimuovi il bordo predefinito */
+    padding: 10px 20px; /* Spaziatura interna */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Effetto di transizione per il cambio di colore */
+}
+
+.button:hover {
+    background-color: #45a049; /* Cambia colore al passaggio del mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata al passaggio del mouse */
+}
+
+
+/* Stile per il messaggio di errore specifico */
+#error-message {
+    color: #c00;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+*{
+    /*CSS RESET*/
+    /*CONFIGURAZIONE DI DEFAULT
+    Per azzerare lo stile di default dei <tag> dato dai broswer
+    ES: <p> <h1> <div> ecc. hanno del margin e padding di default diverso da 0*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    box-sizing: border-box;
+    /*width: 1245px; meglio settare con percentuali al larghezza*/
+    width: 100%; /*largo come tutta la pagina*/
+    height: 100%;
+    border: solid rgb(0, 139, 116);
+}
+
+.box-inner-title{
+    box-sizing: border-box; 
+    background-color: rgb(0, 139, 116);
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    
+    /*FLEX PER CENTRARE TITOLO NEL BOX DEL TITOLO STESSO*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-subtitle{
+    box-sizing: border-box; 
+    background-color: #f0f0f0;;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    
+    /*FLEX PER CENTRARE TITOLO NEL BOX DEL TITOLO STESSO*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-user-input {
+    /*FLEX PER CENTRARE TITOLO NEL BOX DEL TITOLO STESSO*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#conjugation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modo {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+}
+
+.single-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tempo-verbale {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 48%; /* Utilizza meno della metà per garantire spazio tra le colonne */
+}
+
+h2, h3 {
+  color: #006688;
+}
+
+.tempo-verbale .single-conjugation {
+    display: block;
+    margin: 5px 0;
+}
+
+
+/* Stile dell'input */
+#verbo-input {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  height: 40px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Effetto hover sull'input */
+#verbo-input:hover {
+  background-color: #f5f5f5;
+}
